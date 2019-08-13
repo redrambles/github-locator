@@ -19,6 +19,7 @@ class App extends Component {
 		alert: null
 	};
 
+	// Get the first bunch of users right off the bat
 	async componentDidMount() {
 		this.setState({ loading: true });
 		const res = await axios.get(
